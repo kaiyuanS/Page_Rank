@@ -24,7 +24,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 /**
  * The main runner and GUI of the page rank calculator
  * @author Kaiyuan Shi
- * @version 1.1
+ * @version 1.2
  */
 public class PageRankMain {
 	
@@ -88,6 +88,8 @@ public class PageRankMain {
 		} catch (Exception ex) {
 			JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage()
 					, "Error", JOptionPane.ERROR_MESSAGE);
+		} finally {
+			System.exit(0);
 		}
 	}
 	
