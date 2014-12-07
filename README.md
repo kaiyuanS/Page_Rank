@@ -6,7 +6,7 @@ TCSS 554 Assignment 2
 There are three files uploaded:
 PageRankMatrix.java: A simplified matrix that represents a sparse matrix used to calculate page rank
 
-SampleMain: A simple of using PageRankMatrix class
+SampleMain: A sample of using PageRankMatrix class
 
 PageRankMain: The main runner and GUI of the page rank calculator
 
