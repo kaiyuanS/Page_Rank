@@ -24,7 +24,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 /**
  * The main runner and GUI of the page rank calculator
  * @author Kaiyuan Shi
- * @version 1.0
+ * @version 1.1
  */
 public class PageRankMain {
 	
@@ -60,12 +60,15 @@ public class PageRankMain {
 
 	public static void main(String[] args) {
 		try {
-			outPageNUmber = Integer.valueOf(
-					JOptionPane.showInputDialog(
-							null,
-							"how many pages you want to show?",
-							"Page Number",
-							JOptionPane.QUESTION_MESSAGE));
+			String input = JOptionPane.showInputDialog(
+					null,
+					"how many pages you want to show?",
+					"Page Number",
+					JOptionPane.QUESTION_MESSAGE);
+			if (input == null)
+				System.exit(0);
+				
+			outPageNUmber = Integer.valueOf(input);
 			
 			System.out.println("start");
 			myFilePicker = new JFileChooser();
